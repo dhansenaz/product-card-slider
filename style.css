@@ -1,0 +1,24 @@
+.wrapper {
+    margin:0 auto;
+    max-width:500px;
+    background:green;
+}
+
+
+.slider {
+    margin-left:100%;
+    background-color: red;
+    width: 0px;
+    overflow: hidden;
+
+    transition:         width 0.5s ease;
+    -moz-transition:   width 0.5s ease;
+    -ms-transition:     width 0.5s ease;
+    -o-transition:      width 0.5s ease;
+    -webkit-transition: width 0.5s ease;
+}
+
+.slided {
+    height:300px;
+    width: 100px;
+}
