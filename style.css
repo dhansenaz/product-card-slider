@@ -1,7 +1,20 @@
+
+* {
+
+margin:0;
+padding:0
+
+
+}
 .wrapper {
-    margin:0 auto;
-    max-width:500px;
-    background:green;
+    position: absolute;
+    width:500px;
+    height:400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background:yellow;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -20,5 +33,11 @@
 
 .slided {
     height:300px;
-    width: 100px;
+    width: 400px;
+}
+.content {
+    background:green;
+    
+    position: absolute;
+    text-align: center;
 }
