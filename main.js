@@ -1,12 +1,24 @@
-var expander = document.getElementById("expander");
 
-expander.addEventListener("click", function () {
- var slider = document.getElementsByClassName("slider")[0];
+$(document).ready(function() {
+    // all custom jQuery will go here
 
-  if (slider.classList.contains("slided")) {
-    slider.classList.remove("slided");
-  } else {
-    slider.classList.add("slided");
-  }
 
+    // $("#trigger").click(function() {
+    //     $("#demo").html("Hello, World!");
+    //     });
+
+    
+
+    $('#slide_button').click(function() {
+        $('#slide').animate({
+          width: 'toggle',display:'block'
+        }, 1000, function() {
+        });
+      });
+
+
+    
 });
+
+
+

@@ -1,31 +1,86 @@
-.parent-panel {
-    z-index: 5;
+* { Box-sizing: Border-box }
+.mycontainer{
+    white-space: nowrap;
+    overflow-x: hidden;
+    width: 204px;   
+}
+.box{
+    display:inline-block;
+    border: 2px black solid;
+  padding: 20px;
     width: 200px;
-    height: 200px;
-    background-color: purple;
-    margin-top: 10px;
-    position: relative;
-    z-index:0;
-    overflow:hidden;
-  }
-  
-  .child-panel {
-    background-color: yellow;
-    overflow:hidden;
-    transition:1s all;
-  }
-  
-  .content {
-    width: 50px;
     height: 100px;
-    background-color: blue;
-    margin: 50px auto;
-  }
-  
-  #slide-right .child-panel {
-    transform:translateX(-100%);
-  }
- 
-  #slide-right:hover .child-panel{
-    transform:translate(0);
-  }
+    vertical-align:top;
+  background-color:pink;
+}
+.box2{
+    background-color:yellow;
+}
+.car {
+    position: absolute;
+    width:300px;
+    left:-80px;
+    top:20px;
+    transform: rotate(-2deg);
+}
+.text {
+    position: absolute;;
+    top:50%;
+    left:25%;
+    transform: translate(-50%,-50%);
+}
+#slide_button {
+    position: absolute;
+    top:45%;
+    left:46%;
+    height:43px;
+    width:43px;
+    border-radius: 100%;
+    border:none;
+    background-color: #EA6601;
+    box-shadow: 0 2px 5px  rgba(148, 148, 148, 0.4);
+    padding: 0;
+    margin:0;
+    font-size: 10px;
+    color: white;
+    border:1px solid #5F1100;
+}
+#slide_button:hover {
+    cursor: pointer;
+}
+
+#content {
+
+    width:350px;
+    height:450px;
+    background: linear-gradient(to bottom, 
+    #4e54c8,
+    #8f94fb);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* box-shadow: -4px 2px 1px 0px rgba(168,168,168,1); */
+    box-shadow: -4px 10px 10px rgba(0,0,0,.4);
+    border-radius:20px 0px 0px 20px;
+    
+}
+
+#slide {
+    display:none;
+    
+    color: #fff;
+    overflow: hidden;
+    width:300px;
+    height:450px;
+    border-radius:0px 20px 20px 0px;
+    box-shadow: 5px 5px 15px 0px rgba(168,168,168,1);
+    
+}
+.wrapper {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    grid-gap: 1px;
+}
