@@ -23,11 +23,12 @@
     top:20px;
     transform: rotate(-2deg);
 }
-.text {
+.text-wrapper {
     position: absolute;;
-    top:50%;
+    top:60%;
     left:25%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-25%);
+   
 }
 #slide_button {
     position: absolute;
@@ -53,12 +54,9 @@
 
     width:350px;
     height:450px;
-    background: linear-gradient(to bottom, 
-    #4e54c8,
-    #8f94fb);
+    background: linear-gradient(to bottom, #4e54c8 0%,#4e54c8 50%,#8f94fb 51%,#8f94fb 100%);
     background-size: contain;
     background-repeat: no-repeat;
-    /* box-shadow: -4px 2px 1px 0px rgba(168,168,168,1); */
     box-shadow: -4px 10px 10px rgba(0,0,0,.4);
     border-radius:20px 0px 0px 20px;
     
